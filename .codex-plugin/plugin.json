@@ -1,0 +1,38 @@
+{
+  "name": "joai-cursor",
+  "version": "0.3.0",
+  "description": "Connect Cursor to Claude, Codex, and ChatGPT through JoAi's hosted MCP app server.",
+  "author": {
+    "name": "JoAi",
+    "email": "support@joai.ai",
+    "url": "https://joai.ai"
+  },
+  "homepage": "https://joai.ai/en/apps/cursor",
+  "repository": "https://github.com/JoAiHQ/plugins",
+  "license": "MIT",
+  "keywords": [
+    "joai",
+    "mcp",
+    "cursor"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Cursor by JoAi",
+    "shortDescription": "Connect Cursor to Claude, Codex, and ChatGPT through JoAi's hosted MCP app server.",
+    "longDescription": "Create and manage <strong>AI-powered coding agents</strong> that work autonomously on your repositories. Automate code changes, workflows, and pull requests with Cursor's <strong>Cloud Agents API</strong>.",
+    "developerName": "JoAi",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "websiteURL": "https://joai.ai/en/apps/cursor",
+    "privacyPolicyURL": "https://legal.vleap.ai/policies/privacy.html",
+    "termsOfServiceURL": "https://legal.vleap.ai/general/legal-notice.html",
+    "defaultPrompt": [
+      "List the Cursor tools available in this app.",
+      "Explain what setup or authentication Cursor needs before I run an action.",
+      "Use Cursor to help me with the task I describe next."
+    ]
+  }
+}
