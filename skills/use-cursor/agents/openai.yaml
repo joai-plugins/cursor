@@ -1,0 +1,18 @@
+interface:
+  display_name: "Cursor"
+  short_description: "Connect Cursor to Claude, Codex, and ChatGPT through JoAi's hosted MCP app server."
+  icon_small: "https://raw.githubusercontent.com/JoAiHQ/assets/refs/heads/main/apps/logos/cursor.png"
+  icon_large: "https://raw.githubusercontent.com/JoAiHQ/assets/refs/heads/main/apps/logos/cursor.png"
+  brand_color: "#000000"
+  default_prompt: "List the Cursor tools available in this app."
+
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "joai-cursor"
+      description: "Cursor MCP server by JoAi"
+      transport: "streamable_http"
+      url: "https://cortex.joai.ai/mcp/apps/cursor"
